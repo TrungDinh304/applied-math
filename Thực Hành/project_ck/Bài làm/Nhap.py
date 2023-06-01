@@ -1,7 +1,7 @@
 import matplotlib.image as mpimg 
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.tree import DecisionTreeRegressor
+from sklearn.decomposition import PCA
 from PIL import Image
 
 
