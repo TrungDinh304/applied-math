@@ -22,17 +22,3 @@ print(img_transformed.shape)
 print(np.sum(pca.explained_variance_ratio_) )
 
 ax2.imshow(img_r)
-
-temp = pca.inverse_transform(img_transformed) 
-print(temp.shape)
-temp = np.reshape(temp, (rows, cols ,colors)) 
-print(temp.shape) 
-
-
-
-plt.show()
-
-output_file = 'output.png'
-
-# Export image to file
-Image.fromarray(temp.astype(np.uint8)).save(output_file)
